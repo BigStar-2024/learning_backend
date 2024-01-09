@@ -1,0 +1,28 @@
+{% autoescape off %}
+
+Hello {{ first_name }}!
+
+Thank you for joining the newest version of Learn with Socrates!
+
+
+Your children can access the application by going to www.practiceplaygrow.com
+
+
+They can use the username and password you created for them to login to their account and start learning.  As they learn, they will earn coins to spend on just for fun items.  Here is a brief video tutorial to help them get started.
+
+
+https://youtu.be/mGpZkCS_eEg
+
+
+Socrates is progressing your child automatically through thousands of topics.  Login into the application using your user name to see their progress.   You can add more children anytime, as well as update their username and password (because kids forget their passwords often!).
+
+
+To see their progress, go to the manage kids page and click on your child’s avatar  and you will see in-depth information about their progress in their learning journey.
+
+
+If you have questions at anytime - or ideas for us to make the product better, please email us at socrates@withsocrates.com or use the live chat service available for parents.  We are here to help.
+
+Sincerely,
+The Socrates Team
+
+{% endautoescape %}

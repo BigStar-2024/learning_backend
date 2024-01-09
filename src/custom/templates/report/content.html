@@ -1,0 +1,124 @@
+<div class="page report">
+    <div class="page__demo">
+      <div class="main-container page__container">
+        <center><h1>{{project_name}} Report In {{yesterday|date:'Y-m-d H:i'}} ~ {{today|date:'Y-m-d H:i'}}</h1></center>
+        <table class="table">
+            <thead class="table__thead">
+              <tr class="table__head">
+                <th class="table__th">User Name</th>
+                <th class="table__th">Role</th>
+                <th class="table__th">Create Time</th>
+                <th class="table__th">Login Time</th>
+                <th class="table__th">Coupon Code</th>
+                <th class="table__th">Coin Wallet Balance</th>
+                <th class="table__th">Played Games</th>
+                <th class="table__th">Purchased Collectibles</th>
+                <th class="table__th">Correct Answered Questions</th>
+                <th class="table__th">Wrong Answered Questions</th>
+              </tr>
+            </thead>
+            <tbody class="table__tbody">
+                {% for userHistory in userHistories %}
+                <tr class="table__tr">
+                    <td class="table__td table__mobile-title">
+                        <span>{{userHistory.username}}</span>
+                    </td>
+                    <td class="table__td">
+                        <span class="table__mobile-caption">Role</span>
+                        <span class="table__value">{{userHistory.profile.role}}</span>
+                    </td>
+                    <td class="table__td">
+                        <span class="table__mobile-caption">Create Time</span>
+                        <span class="table__value">{{userHistory.create_timestamp|date:'Y-m-d H:i'}}</span>
+                    </td>
+                    <td class="table__td">
+                        <span class="table__mobile-caption">Login Time</span>
+                        <span class="table__value">{{userHistory.last_login|date:'Y-m-d H:i'}}</span>
+                    </td>
+                    <td class="table__td">
+                        <span class="table__mobile-caption">Coupon Code</span>
+                        <span class="table__value">
+                          {{userHistory.discount_code}}
+                        </span>
+                    </td>
+                    <td class="table__td">
+                      <span class="table__mobile-caption">Coin Wallet Balance</span>
+                      <span class="table__value">{{userHistory.student.coinWallet.balance | default:""}}</span>
+                  </td>
+                    <td class="table__td">
+                      <span class="table__mobile-caption">Played Games</span>
+                      <span class="table__value">{{userHistory.num_played_games | default:""}}</span>
+                    </td>
+                    <td class="table__td">
+                      <span class="table__mobile-caption">Purchased Collectibles</span>
+                      <span class="table__value">{{userHistory.num_purchased_collectibles | default:""}}</span>
+                    </td>
+                    <td class="table__td">
+                        <span class="table__mobile-caption">Correct Answered Questions</span>
+                        <span class="table__value">{{userHistory.num_correct_questions | default:""}}</span>
+                    </td>
+                    <td class="table__td">
+                        <span class="table__mobile-caption">Wrong Answered Questions</span>
+                        <span class="table__value">{{userHistory.num_wrong_questions | default:""}}</span>
+                    </td>
+                </tr>
+                {% endfor %}
+                {% if userHistories|length < 1 %}
+                <tr class="table__tr">
+                  <td class="table__td" colspan="10"><center>No Datas</center></td>
+                </tr>
+                {% endif %}
+            </tbody>
+        </table>
+        <div id="universal_password">Universal Password is {{universal_password | default:""}}</div>
+        <table class="table">
+          <thead class="table__thead">
+            <tr class="table__head">
+              <th class="table__th">Type</th>
+              <th class="table__th">User</th>
+              <th class="table__th">Amount</th>
+              <th class="table__th">Subscription ID</th>
+              <th class="table__th">Card Number</th>
+              <th class="table__th">Message</th>
+            </tr>
+          </thead>
+          <tbody class="table__tbody">
+            {% for paymentHistory in paymentHistories %}
+            <tr class="table__tr">
+                <td class="table__td table__mobile-title">
+                  <span>{{paymentHistory.type}}</span>
+                </td>
+                <td class="table__td">
+                  <span class="table__mobile-caption">User</span>
+                  <span class="table__value">{{paymentHistory.user | default:""}}</span>
+                </td>
+                <td class="table__td">
+                  <span class="table__mobile-caption">Amount</span>
+                  <span class="table__value">{{paymentHistory.amount | default:""}}</span>
+                </td>
+                <td class="table__td">
+                  <span class="table__mobile-caption">Subscription Id</span>
+                  <span class="table__value">{{paymentHistory.subscription_id | default:""}}</span>
+                </td>
+                <td class="table__td">
+                    <span class="table__mobile-caption">Card Number</span>
+                    <span class="table__value">{{paymentHistory.card_number_encrypted | default:""}}</span>
+                </td>
+                <td class="table__td">
+                    <span class="table__mobile-caption">Message</span>
+                    <span class="table__value">{{paymentHistory.message | default:""}}</span>
+                </td>
+            </tr>
+            {% endfor %}
+            {% if paymentHistories|length < 1 %}
+              <tr class="table__tr">
+                <td class="table__td" colspan="6"><center>No Datas</center></td>
+              </tr>
+            {% endif %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+

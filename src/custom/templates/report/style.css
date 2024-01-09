@@ -1,0 +1,204 @@
+#content {
+    margin-top:40px
+}
+.report {
+    font-family:      -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Open Sans", "Ubuntu", "Fira Sans", "Helvetica Neue", sans-serif;
+    font-size:        1.4rem;
+    background-color: white;
+    color:          #222 !important;
+    margin:           0;
+    -webkit-overflow-scrolling: touch;   
+  }
+.report #universal_password{
+  text-align: center;
+  overflow-wrap: break-word;
+  font-size: 15px;
+}
+.report h1{
+    font-weight:  500;
+    font-size:    22px;
+    color:      black;
+}
+.report .table td, th{
+  font-size:      13px;
+  line-height:    16px;
+  border-bottom:  1px solid var(--hairline-color);
+}
+.report .table{
+  width:            100%;
+  border-spacing:   0;
+  border-collapse:  collapse;
+  box-shadow:       0 5px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+  background-color: var(--tableBgColor, #fff);
+  border-width:     1px;
+  border-style:     solid;
+  border-color:   #5668ca;
+  margin-bottom:    20px;
+}
+.report .table thead th{
+    background:     unset !important; 
+}
+.report .table thead tr:nth-child(odd){
+    background:     unset !important; 
+}
+.report .table td, .report .table th {
+    padding:          0.75rem;
+    vertical-align:   top;
+    border-top:       1px solid #dee2e6;
+    border-right:     1px solid #b0ceeb;
+}
+.report .table__thead{
+  background-color: #5668ca !important;
+  color:            #fff !important;
+}
+.report .table thead th{
+    color:      white;
+    font-size:    13px;
+    font-weight:  bold;
+}
+.report .table__mobile-caption{
+  display:        none;
+}
+
+.report .table__td, .report .table__th{
+  padding:    7.5px;
+  box-sizing: border-box;
+}
+.report .table tr:nth-child(even) {
+  background-color: #f0f0f0 !important;
+}
+@media screen and (min-width: 769px){
+
+  .report .table__tr:hover{
+    background-color: #f0f0f0;
+  }
+
+  .report .table__td:first-child, .report .table__th:first-child{
+    width:      30%;
+    text-align: left;
+  }
+
+  .report .table__td, .report .table__th{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  .report .table, .report .table__thead, .report .table__tbody, .report .table__tr{
+    display: block;
+  }
+
+  .report .table__td{
+    display: flex;
+  }
+
+  .report .table__head{
+    display: none;
+  }
+
+  .report .table__mobile-title{
+    background-color: #5668ca;
+    color:            #fff;
+  }
+
+  .report .table__td{
+    border-bottom:      1px solid #eee;
+  }
+
+  .report .table__td:last-of-type{
+    border-bottom:      none;
+  }
+
+  .report .table__mobile-caption, .report .table__value{
+    display:            block;
+    width:              50%;
+    box-sizing:         border-box;
+  }
+
+  .report .table__mobile-caption{
+    padding-right:      2%;
+  }
+}
+
+  /* demo styles for table */
+
+  /*
+  * demo page
+  */
+
+  @media screen and (min-width: 768px){
+
+      .report {
+      font-size: 62.5%;
+    }
+  }
+
+@media screen and (max-width: 767px){
+
+    .report {
+    font-size: 50%;
+  }
+}
+
+
+
+.report a{
+  text-decoration:  none;
+  color:          #5668ca;
+}
+
+.report a:hover, .report a:focus{
+  text-decoration:  underline;
+}
+
+.report .page{
+  min-height:       100vh;
+  display:          flex;
+  flex-direction:   column;
+  justify-content:  space-around;
+}
+
+.report .page__demo{
+  flex-grow: 1;
+}
+
+.report .main-container{
+  padding-left:   1rem;
+  padding-right:  1rem;
+  max-width:      1000px;
+  
+  margin-right:   auto;
+  margin-left:    auto;
+}
+
+.report .page__container{
+  margin-top:     4rem;
+  margin-bottom:  4rem;
+}
+
+.report .footer{
+  padding-top:    1rem;
+  padding-bottom: 1rem;
+  text-align:     center;  
+  font-size:      1.4rem;
+}
+
+@media screen and (min-width: 641px){
+
+  .report .footer__container{
+    display:          flex;
+    justify-content:  space-between;
+  }
+
+  .report .melnik909{
+    margin-left: 7.5px;
+  }  
+}
+
+@media screen and (max-width: 640px){
+
+  .report .melnik909{
+    display: none;
+  } 
+}

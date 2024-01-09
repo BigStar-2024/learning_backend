@@ -1,0 +1,280 @@
+:root{
+    --link-fg: #3a3b45;
+    --selected-row: #eaecf4;
+    --primary: #1771B9;
+    --button-hover-bg: #394eea;
+    --default-button-bg: #1771B9;
+    --default-button-hover-bg: #394eea;
+    --body-bg: white;
+    --body-fg: #333;
+    --hairline-color: #e8e8e8;
+    --darkened-bg: #f8f8f8;
+    --selected-bg: #e4e4e4;
+    --body-quiet-color: #666;
+    --header-bg: #1771B9;
+}
+::-webkit-scrollbar {
+    width: 7px;
+    height: 15px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(45deg, #00aeff, #a68eff);
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(0,0,0,.12) 0 3px 13px 1px;
+}
+.body{
+    /* background-color: #F7FAF8; */
+    /* background-image:    url(https://wallpapercave.com/download/office-administration-wallpapers-wp10701745) !important; */
+    /* background-image:    url(https://firebasestorage.googleapis.com/v0/b/learningwithsocrates-frontend.appspot.com/o/django-admin%2Fwp9723728-children-cartoon-wallpapers.jpg?alt=media&token=9913a0e4-5b33-4323-9acb-d2d69364da01); */
+    /* background-image:    url(https://firebasestorage.googleapis.com/v0/b/learningwithsocrates-frontend.appspot.com/o/django-admin%2Flearning-education.jpg?alt=media&token=c6f13a39-93c6-40e8-9b7f-3b026a4b6dc1); */
+    background-image:    url(https://firebasestorage.googleapis.com/v0/b/learningwithsocrates-frontend.appspot.com/o/django-admin%2Fadmin-bg-global.jpg?alt=media&token=f982fca0-4439-4213-8c39-d8b6b8882ae2);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat !important;
+    background-position: center center !important;              /* optional, center the image */
+    background-attachment: fixed;
+}
+#header{
+    background-color: var(--primary);
+}
+.module{
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+    padding: 7px;
+    border-radius: calc(0.75rem - 0px) calc(0.75rem - 0px) calc(0.75rem - 0px) calc(0.75rem - 0px);
+}
+.module caption{
+    border-radius:      calc(0.75rem - 1px) calc(0.75rem - 1px) 0 0;
+    padding-bottom:     1rem!important;
+    padding-top:        1rem!important;
+    align-items:        center!important;
+    justify-content:    space-between!important;
+    flex-direction:     row!important;
+    background-color:   white;
+}
+.module caption a{
+    color:          var(--primary) !important;
+    font-weight:    700!important;
+    font-size:      1rem;
+}
+.module table{
+    width: 100%;
+}
+.module table th{
+    width: 100%;
+}
+.module table tr:nth-child(even){
+    background-color: white
+}
+.module table tr{
+    border-width:   0px;
+    border-color: white
+}
+.module table tr:hover{
+    background-color: var( --selected-row);
+}
+nav .module caption a{
+    color: rgb(133, 135, 150)!important;
+}
+nav .module table tbody a{
+    color:        rgb(58, 59, 69)!important;
+    font-weight:  300;
+}
+nav .module table tbody{
+    background-color: #fff!important;
+    box-shadow:       rgba(58, 59, 69, 0.15) 0px 2.4px 28px 0px;
+    box-sizing:         border-box;
+    color:            rgb(117, 117, 117);
+}
+nav .module{
+    margin-bottom:  3px;
+    box-shadow:     unset!important;
+}
+nav .current-model a{
+    font-weight: 700 !important;
+
+}
+nav th{
+    border: none;
+}
+nav td{
+    border: none;
+}
+nav table{
+    border-collapse: collapse;
+}
+
+nav table tbody tr th:first-child {
+    border-radius: 5px 0px 0px 5px;
+}
+
+nav table tbody tr td:last-child {
+    border-radius: 0 5px 5px 0;
+}
+#changelist-filter h2{
+    padding: 1rem !important;
+}
+.object-tools a{
+    color: #fff !important;
+    background-color:   var(--primary) !important;
+    font-weight:        400;
+    font-size:          1rem;
+    line-height:        1.5;
+    border-color:       var(--primary);
+    -webkit-box-shadow: 0 .125rem .25rem 0 rgba(58,59,69,.2)!important;
+    box-shadow:         0 .125rem .25rem 0 rgba(58,59,69,.2)!important;
+    border-radius:      0.25rem;
+    margin-bottom:      0.25rem!important;
+    padding:            10px 29px 10px 20px !important;
+}
+.object-tools a:hover{
+    background-color:   var(--button-hover-bg) !important;
+    border-color:       var(--button-hover-bg);
+}
+#toolbar form input[type="submit"]{
+    color:            #fff !important;
+    background-color:   var(--primary) !important;
+    font-weight:        400;
+    font-size:          1rem;
+    line-height:        1.5;
+    border-color:       var(--primary);
+    -webkit-box-shadow: 0 .125rem .25rem 0 rgba(58,59,69,.2)!important;
+    box-shadow:         0 .125rem .25rem 0 rgba(58,59,69,.2)!important;
+    border-radius:      0.25rem;
+    margin-bottom:      0.25rem!important;
+    padding:            2px 10px 2px 10px !important;
+}
+.dropdown {
+    display:        inline-block;
+    cursor:         pointer;
+    color:        white;
+    padding-right:  50px;
+}
+
+.dropdown-content {
+    display:            none;
+    position:           absolute;
+    box-shadow:         0 .15rem 1.75rem 0 rgba(58,59,69,.15)!important;
+    text-align:         left;
+    background-color: white;
+    z-index:            1;
+    min-width:          10rem;
+    padding:            0.5rem 0;
+    margin:             0 0 0 0;
+    font-size:          .85rem;
+    color:            #757575;
+    text-align:         left;
+    list-style:         none;
+    background-color: #fff;
+    background-clip:    padding-box;
+    border:             1px solid #e3e6f0;
+    border-radius:      0.35rem;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown a{
+    display:        block;
+    width:          100%;
+    padding:        0.25rem 1.5rem;
+    clear:          both;
+    font-weight:    400;
+    color:        #3a3b45 !important;
+    text-align:     inherit;
+    white-space:    nowrap !important;
+    background-color: transparent !important;
+    border:         0;
+    font-size:      11px !important;
+}
+.dropdown p:hover{
+    color:            #2e2f37 !important;
+    text-decoration:    none !important;
+    background-color: #e3eaef !important;
+}
+.dropdown a:hover{
+    border: unset !important;
+}
+.img-profile {
+    height:     2rem;
+    width:      2rem;
+    border:     1px solid #fafafa;
+}
+.parler-language-tabs .current{
+    color:            #fff !important;
+    background-color:   var(--primary) !important;
+    font-weight:        400;
+    font-size:          1rem;
+    line-height:        1.5;
+    border-color:       var(--primary);
+    -webkit-box-shadow: 0 .125rem .25rem 0 rgba(58,59,69,.2)!important;
+    box-shadow:         0 .125rem .25rem 0 rgba(58,59,69,.2)!important;
+    border-radius:      0.25rem;
+    margin-bottom:      0.25rem!important;
+    padding:            10px 29px 10px 20px !important;
+}
+.parler-language-tabs > span :hover{
+    color:            #fff !important;
+    background-color:   var(--primary) !important;
+    font-weight:        400;
+    font-size:          1rem;
+    line-height:        1.5;
+    border-color:       var(--primary);
+    -webkit-box-shadow: 0 .125rem .25rem 0 rgba(58,59,69,.2)!important;
+    box-shadow:         0 .125rem .25rem 0 rgba(58,59,69,.2)!important;
+    border-radius:      0.25rem;
+    margin-bottom:      0.25rem!important;
+    padding:            10px 29px 10px 20px !important;
+}
+.parler-language-tabs {
+    border-bottom: 2px solid var(--primary) !important;
+}
+
+.rounded-circle {
+    border-radius: 50%!important;
+}
+img {
+    vertical-align: middle;
+    border-style:   none;
+}
+a.download{
+    color: #fff !important;
+    background-color: var(--primary) !important;
+    line-height: 1.5;
+    border-color: var(--primary);
+    box-shadow: 0 .125rem .25rem 0 rgba(58,59,69,.2)!important;
+    border-radius: 0.25rem;
+    margin-bottom: 0.25rem!important;
+    padding: 10px 20px 10px 20px !important;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}
+a.download:hover {
+    background-color: var(--button-hover-bg) !important;
+    border-color: var(--button-hover-bg);
+}
+a.restore{
+    color: #fff !important;
+    background-color: #f44336 !important;
+    line-height: 1.5;
+    border-color: var(--primary);
+    box-shadow: 0 .125rem .25rem 0 rgba(58,59,69,.2)!important;
+    border-radius: 0.25rem;
+    margin-bottom: 0.25rem!important;
+    padding: 10px 20px 10px 20px !important;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}
+a.restore:hover {
+    background-color: #d44336 !important;
+    border-color: #e7e7e7;
+}

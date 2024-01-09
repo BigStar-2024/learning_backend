@@ -1,0 +1,38 @@
+{% autoescape off %}
+
+Hello {{ teacher_name }}!  
+
+Thank you for joining the newest version of Learn with Socrates!
+
+
+The Socrates Team is here to support you and your students in using Socrates to improve educational outcomes. Here is a quick overview of how to get started.
+
+Watch our Quick Start video guide here. [YouTube link about Socrates 2.0 overview including student site and teacher site]
+
+Remember, as your students answer questions, the Socrates engine will automatically advance your student through their learning journey - helping them advance and reinforcing where they are struggling. Each child’s journey on Socrates is unique.
+
+We’ve created a playlist of video tutorials to help familiarize you with all the tools, features, and functionality of the Socrates platform. 
+
+For students : Tutorial to help students and parents get started  https://youtu.be/mGpZkCS_eEg
+
+For teachers: Tutorial to help teachers get started ( YouTube link how to user teacher site )
+
+Contact us at info@withsocrates.com with any questions you may have. We also appreciate feedback about how we can make our platform better for each user. We would also love to learn about new content that you would like to see in the future. You can get help anytime using our live chat in the teacher command center.
+
+Are other teachers in your school interested in using Socrates for their classrooms?  Our referral program gives you a discount off your subscription. Contact us to add teachers or get school pricing.
+
+Subscribe to our YouTube channel FREE as part of your subscription. We have thousands of updated learning videos for kids, and tutorial videos for parents.
+
+https://www.youtube.com/channel/UCc0cJCA1FTXVNg8MdpPlXDQ
+
+Stay connected! Like us on Facebook and join our Parent Facebook Group where we post tutorials and tips.
+
+https://www.facebook.com/learnwithsocrates  
+https://www.facebook.com/groups/Learnwithsocrates
+
+
+<b>Best,
+The Socrates Team
+www.WithSocrates.com </b>
+
+{% endautoescape %}

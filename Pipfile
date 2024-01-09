@@ -1,0 +1,45 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+Django = "<4"
+django-reversion = "*"
+django-polymorphic = "*"
+easy-thumbnails = "*"
+django-allauth = "*"
+django-parler = "*"
+django-mptt = "*"
+django-import-export = "*"
+django-extensions = "*"
+django-ckeditor = "*"
+django-cors-headers = "*"
+coreapi = "*"
+django-mailer = "*"
+graphene-django = "*"
+django-graphql-jwt = "*"
+PyJWT = ">=2.3"
+sendgrid = "*"
+celery = "*"
+django-import-export-celery = "*"
+gunicorn = "*"
+psycopg2 = "*"
+gTTS = "*"
+django-admin-sortable2 = "*"
+django-money = "*"
+dj-stripe = "*"
+beautifulsoup4 = "*"
+html5lib = "*"
+lxml = "*"
+paypalrestsdk = "*"
+django-model-utils = "*"
+django-admin-autocomplete-filter = "*"
+django-crispy-forms = "*"
+django-crontab = "*"
+django-dbbackup = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

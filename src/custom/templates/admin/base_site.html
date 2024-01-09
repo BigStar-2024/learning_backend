@@ -1,0 +1,45 @@
+{% extends "admin/base_site.html" %}
+{% block extrahead %}
+<link rel="icon" href="https://practiceplaygrow.com//favicon.ico">
+<script>window.CKEDITOR_BASEPATH = '/static/ckeditor/ckeditor/';</script>
+{{ block.super }}
+{% endblock %}
+
+{% block title %}Learn With Socrates Admin{% endblock %}
+
+{% block branding %}<img src="https://firebasestorage.googleapis.com/v0/b/learningwithsocrates-frontend.appspot.com/o/assets%2Fadmin%2Flogo.svg?alt=media" />{% endblock %}
+{% block breadcrumbs %}{% endblock %}
+
+{% block bodyclass %}body{% endblock %}
+{% block welcome-msg %}
+    
+    <div class="dropdown">
+        <img class="img-profile rounded-circle" src="https://technext.github.io/ruang-admin/img/boy.png" style="max-width: 60px">
+        <strong>{% firstof user.get_short_name user.get_username %}</strong>
+        <div class="dropdown-content">
+            {% if site_url %}
+                <p><a href="{{ site_url }}">View Site</a> </p>
+            {% endif %}
+            {% if user.is_active and user.is_staff %}
+                {% url 'django-admindocs-docroot' as docsroot %}
+                {% if docsroot %}
+                    <p><a href="{{ docsroot }}">Documentation</a> </p>
+                {% endif %}
+            {% endif %}
+            {% if user.has_usable_password %}
+                <p><a href="{% url 'admin:password_change' %}">Change password</a> </p>
+            {% endif %}
+            <p><a href="{% url 'admin:logout' %}">Log out</a></p>
+        </div>
+    </div>
+{% endblock %}
+{% block userlinks %}
+{% endblock %}
+
+{% block extrastyle %}
+
+<style>
+    {% include "admin/style.css" %}
+</style>
+
+{% endblock %}

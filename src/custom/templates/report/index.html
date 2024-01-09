@@ -1,0 +1,27 @@
+{% extends 'admin/custom_page.html' %}
+
+{% block result_list %}
+{% include 'report/content.html' %}
+{% endblock result_list %}
+{% block messages %}
+    {% if messages %}
+    <ul class="messagelist">{% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message.message|capfirst }}</li>
+    {% endfor %}</ul>
+    {% endif %}
+{% endblock messages %}
+{% block object-tools %}
+    <ul class="object-tools">
+        <li>
+
+            <a href="/admin/report/send" class="addlink">
+                Send Report
+            </a>
+            </li>
+    </ul>
+{% endblock %}
+{% block inlineStyle %}
+<style>
+    {% include "report/style.css" %}
+</style>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% autoescape off %}
+
+Hello {{ subscriber_name }}!  
+
+Thank you for joining Learn with Socrates!
+
+
+The Socrates Team is here to support your teachers and students in using Socrates to improve educational outcomes. Here is a quick overview of how to get started.
+
+Watch our Quick Start video guide here. [YouTube link about Socrates 2.0 overview including student site and teacher site
+
+For students: Tutorial to help students and parents get started  https://youtu.be/mGpZkCS_eEg
+
+For teachers: Tutorial to help teachers get started ( YouTube link how to user teacher site )
+
+For school and admin: Tutorial to help admin and schools to set up the teachers  ( YouTube link how to use school and admin site )
+
+Tell us what you think about Socrates! What would you like to see added? What do you love? What learning modules do you like the most? How can we improve?
+
+Contact us at info@withsocrates.com with any questions you may have. We also appreciate feedback about how we can make our platform better for each user. We would also love to learn about new content that you would like to see in the future. You can get help anytime using our live chat in the teacher command center.
+
+Subscribe to our YouTube channel FREE as part of your subscription. We have thousands of updated learning videos for kids, and tutorial videos for parents.
+
+https://www.youtube.com/channel/UCc0cJCA1FTXVNg8MdpPlXDQ
+
+Stay connected! Like us on Facebook and join our Facebook Group where we post tutorials and tips.
+
+https://www.facebook.com/learnwithsocrates  
+https://www.facebook.com/groups/Learnwithsocrates/ 
+
+
+<b>Best,
+The Socrates Team
+www.WithSocrates.com </b>
+
+{% endautoescape %}

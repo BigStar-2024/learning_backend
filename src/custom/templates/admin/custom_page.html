@@ -1,0 +1,31 @@
+{# templates/admin/custom_page.html #}
+
+{% extends 'admin/change_list.html' %}
+
+{% block pagination %}{% endblock %}
+{% block filters %}{% endblock filters %}
+{% block object-tools %}{% endblock object-tools %}
+{% block search %}{% endblock %}
+
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+  <a href="{% url 'admin:index' %}">Home</a>
+  {% if page_name %} &rsaquo; {{ page_name }}{% endif %}
+</div>
+{% endblock %}
+{% block nav-sidebar %}
+  {% include "admin/nav_sidebar.html" %}
+{% endblock %}
+
+{% block result_list %}
+  {{text|safe}}
+{% endblock result_list %}
+
+{% block extrastyle %}
+  {% block inlineStyle %}
+  {% endblock %}
+  <style>
+  {%include "admin/style.css"%}
+
+  </style>
+{% endblock %}

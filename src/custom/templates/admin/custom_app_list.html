@@ -1,0 +1,18 @@
+<div id="extra_links_wrapper" class="module">
+    <table>
+        <caption>
+            <a class="section" title="Custom Pages">Custom Pages</a>
+        </caption>
+        <tr>
+            <th scope="row">
+                <a href="{% url 'admin:report' %}">
+                    Report
+                </a>
+            </th>
+            <td><a href="/admin/report/send" class="addlink">Send</a></td>
+            <td><a href="/admin/report/" class="viewlink">View</a></td>
+        </tr>
+    </table>
+</div>
+
+{% include 'admin/app_list.html' %}
